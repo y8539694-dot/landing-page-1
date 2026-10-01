@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nach | أتمتة المهام المتكررة لشركتك</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6FA;--ink:#0E2238;--muted:#52667c;--teal:#00A38C;--amber:#FFB84D;--line:#d5dee8;--card:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:700;font-size:1.3rem}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:500}
+.btn:hover,.btn:focus-visible{background:var(--teal);outline:none}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.alt:hover{background:var(--ink);color:#fff}
+.hero{padding:50px 0 70px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+h1{font-size:2.5rem;line-height:1.35;margin-bottom:16px}
+.hero p{color:var(--muted);font-size:1.1rem;margin-bottom:28px;max-width:46ch}
+.hero .btn+.btn{margin-inline-start:10px}
+.flow{display:flex;flex-direction:column;gap:0;align-items:center}
+.node{width:100%;max-width:320px;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px}
+.node b{display:block}
+.node small{color:var(--muted)}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--teal);flex:none}
+.node:nth-child(3) .dot{background:var(--amber)}
+.node:nth-child(5) .dot{background:var(--ink)}
+.link{width:2px;height:26px;background:var(--teal)}
+.node.run{animation:pulse 3s ease-in-out infinite alternate}
+@keyframes pulse{to{border-color:var(--teal)}}
+section{padding:50px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin-bottom:26px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.services h3{margin-bottom:6px}
+.services p{color:var(--muted)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:24px}
+.plan.main{border-color:var(--teal);border-width:2.5px}
+.plan h3{margin-bottom:4px}
+.price{font-size:2rem;font-weight:700;margin:6px 0 12px}
+.price small{font-size:1rem;color:var(--muted);font-weight:400}
+.plan ul{list-style:none;color:var(--muted);margin-bottom:18px}
+.plan li{padding:3px 0}
+.plan li::before{content:"✓";color:var(--teal);margin-inline-end:8px;font-weight:700}
+.plan .btn{width:100%;text-align:center}
+.contact{text-align:center}
+.contact p{color:var(--muted);margin-bottom:20px}
+footer{padding:26px 0;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero,.services,.plans{grid-template-columns:1fr}h1{font-size:2rem}}
+@media(prefers-reduced-motion:reduce){.node.run{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">nach</div>
+    <a class="btn alt" href="#contact">تواصل معنا</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>خلّي الشغل المتكرر يشتغل لوحده</h1>
+        <p>نربط أدواتك مع بعض، فكل طلب جديد يتسجل ويتصنف ويوصلك إشعاره تلقائيا، من غير ما تضيع وقتك في النسخ واللصق.</p>
+        <a class="btn" href="#plans">شوف الباقات</a>
+        <a class="btn alt" href="#services">الخدمات</a>
+      </div>
+      <div class="flow" aria-label="مثال على سير عمل مؤتمت">
+        <div class="node"><span class="dot"></span><div><b>نموذج طلب جديد</b><small>العميل يملأ بياناته</small></div></div>
+        <div class="link"></div>
+        <div class="node run"><span class="dot"></span><div><b>الذكاء الاصطناعي</b><small>يصنّف الطلب ويلخصه</small></div></div>
+        <div class="link"></div>
+        <div class="node"><span class="dot"></span><div><b>Google Sheets</b><small>يتسجل في الجدول</small></div></div>
+        <div class="link"></div>
+        <div class="node"><span class="dot"></span><div><b>إشعار بالإيميل</b><small>يوصلك فورا</small></div></div>
+      </div>
+    </div>
+
+    <section id="services">
+      <h2>إيه اللي نقدر نأتمته؟</h2>
+      <div class="services">
+        <div><h3>تسجيل العملاء</h3><p>أي نموذج أو رسالة جديدة تتحول لصف منظم في جدول بياناتك.</p></div>
+        <div><h3>الردود التلقائية</h3><p>ردود جاهزة على الاستفسارات المتكررة، بصياغة تناسب نشاطك.</p></div>
+        <div><h3>التقارير</h3><p>ملخص دوري يتبعت لك بالإيميل بدل ما تجمعه بإيدك.</p></div>
+      </div>
+    </section>
+
+    <section id="plans">
+      <h2>الباقات</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>أساسي</h3>
+          <div class="price">50$ <small>/ مشروع</small></div>
+          <ul><li>أتمتة واحدة بسيطة</li><li>ربط أداتين</li><li>تسليم خلال 3 أيام</li></ul>
+          <a class="btn alt" href="#contact">اطلب الباقة</a>
+        </div>
+        <div class="plan main">
+          <h3>متوسط</h3>
+          <div class="price">150$ <small>/ مشروع</small></div>
+          <ul><li>سير عمل كامل</li><li>ربط 3 أدوات أو أكثر</li><li>شرح طريقة الاستخدام</li></ul>
+          <a class="btn" href="#contact">اطلب الباقة</a>
+        </div>
+        <div class="plan">
+          <h3>متقدم</h3>
+          <div class="price">300$ <small>/ مشروع</small></div>
+          <ul><li>أكثر من سير عمل</li><li>دمج الذكاء الاصطناعي</li><li>دعم بعد التسليم</li></ul>
+          <a class="btn alt" href="#contact">اطلب الباقة</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>عندك عملية متكررة؟</h2>
+      <p>ابعتلنا وصف بسيط لشغلك، ونقترح عليك أنسب حل.</p>
+      <a class="btn" href="mailto:y8539694@gmail.com">راسلنا</a>
+    </section>
+  </main>
+
+  <footer>صفحة تجريبية من تصميمي ضمن مشاريع التدريب</footer>
+</div>
+</body>
+</html>
